@@ -1,6 +1,5 @@
 import Notiflix from 'notiflix';
 
-
 const formEl = document.querySelector('.form');
 const btnEl = document.querySelector('[type="submit"]');
 
@@ -27,7 +26,7 @@ function onSubmitClick(e) {
       });
     delay += step;
   }
-  btnEl.disabled = true;
+  btnEl.disabled = false;
 }
 
 function createPromise(position, delay) {
@@ -42,3 +41,4 @@ function createPromise(position, delay) {
     }, delay);
   });
 }
+
