@@ -26,7 +26,7 @@ function onSubmitClick(e) {
       });
     delay += step;
   }
-  btnEl.disabled = false;
+  form.reset();
 }
 
 function createPromise(position, delay) {
